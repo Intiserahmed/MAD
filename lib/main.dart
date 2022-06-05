@@ -13,6 +13,12 @@ class MyApp extends StatelessWidget {
           Tab(
             text: "All",
           ),
+          Tab(
+            text: "Living Room",
+          ),
+          Tab(
+            text: "BedRoom",
+          ),
         ],
       );
   // This widget is the root of your application.
@@ -20,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 1,
+        length: 3,
         child: Scaffold(
             appBar: AppBar(
               title: const Text(
